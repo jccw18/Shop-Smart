@@ -1,0 +1,32 @@
+# Team Task Log
+
+- Course: CSCI 1120G SDLC Shop Smart
+- Team Name: The Accountables
+- Repository: https://github.com/jccw18/Shop-Smart
+
+---
+
+## Task Assignment and Completion Log
+
+| Task ID | SDLC Phase | Task Description | Assigned Member | Target Date | Status | Linked Issue |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| T-101 | Phase 1 | Initial Repo Setup & README | [Student Name] | YYYY-MM-DD | Completed | #1 |
+| T-102 | Phase 2 | Draft Functional Requirements | [Student Name] | YYYY-MM-DD | In Progress | #2 |
+| T-103 | Phase 2 | System Architecture Diagram | [Student Name] | YYYY-MM-DD | Pending | #3 |
+| T-104 | Phase 2 | UI/UX Screen Wireframes | [Student Name] | YYYY-MM-DD | Pending | #4 |
+
+---
+
+## Individual Contribution Summaries
+
+### [Student 1 Name]
+- Phase 1: Configured repository, gitignore, and initial README template.
+- Phase 2: Authored functional requirements and established project task log.
+
+### [Student 2 Name]
+- Phase 1: Account setup and invitation acceptance.
+- Phase 2: Designed system architecture diagram and module layout.
+
+### [Student 3 Name]
+- Phase 1: Account setup and board configuration.
+- Phase 2: Created UI wireframes and user stories.
