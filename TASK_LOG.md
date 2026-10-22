@@ -11,7 +11,7 @@
 | Task ID | SDLC Phase | Task Description | Assigned Member | Target Date | Status | Linked Issue |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | T-101 | Phase 1 | Initial Repo Setup & README | Jesse Wolford | 2026-10-12 | Completed | #1 |
-| T-102 | Phase 2 | Draft Functional Requirements | Jesse Wolford | YYYY-MM-DD | In Progress | #2 |
+| T-102 | Phase 2 | Draft Functional Requirements | [Student Name] | YYYY-MM-DD | In Progress | #2 |
 | T-103 | Phase 2 | System Architecture Diagram | [Student Name] | YYYY-MM-DD | Pending | #3 |
 | T-104 | Phase 2 | UI/UX Screen Wireframes | [Student Name] | YYYY-MM-DD | Pending | #4 |
 
