@@ -19,7 +19,7 @@
 
 ## Individual Contribution Summaries
 
-### [Student 1 Name]
+### Jesse Wolford
 - Phase 1: Configured repository, gitignore, and initial README template.
 - Phase 2: Authored functional requirements and established project task log.
 
