@@ -24,10 +24,10 @@
 - Phase 1: Configured repository, gitignore, and initial README template.
 - Phase 2: Authored functional requirements and established project task log.
 
-### [Student 2 Name]
+### Warren Nixon
 - Phase 1: Account setup and invitation acceptance.
 - Phase 2: Designed system architecture diagram and module layout.
 
-### [Student 3 Name]
+### Diego Balderaz
 - Phase 1: Account setup and board configuration.
 - Phase 2: Created UI wireframes and user stories.
