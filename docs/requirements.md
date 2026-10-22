@@ -1,3 +1,5 @@
+###
+
 User Stories:  
 
 “As a college student, I try not to overspend. I want an app where I can put my daily expenses and bank account amount all in one place.”  
@@ -21,3 +23,4 @@ In addition to this, the application will currently only run and formatted using
 The applications interface must have easy and clear instructions for new users. 
 
  
+###
