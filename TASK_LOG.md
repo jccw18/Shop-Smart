@@ -11,10 +11,10 @@
 | Task ID | SDLC Phase | Task Description | Assigned Member | Target Date | Status | Linked Issue |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | T-101 | Phase 1 | Initial Repo Setup & README | Jesse Wolford | 2026-10-12 | Completed | #1 |
-| T-102 | Phase 2 | Functional Requirements & User Stories | Jesse, Warren, Diego | 2026-10-25 | In Progress | #2 |
+| T-102 | Phase 2 | Functional Requirements & User Stories | Jesse, Warren, Diego | 2026-10-25 | Completed | #2 |
 | T-103 | Phase 2 | System Architecture & Component Map | Jesse Wolford | 2026-10-25 | Completed | #3 |
 | T-104 | Phase 2 | Data Structures & OOP Design | Warren Nixon | 2026-10-25 | Completed | #4 |
-| T-105 | Phase 2 | Logic Flow & Flowcharting | Diego Balderaz | 2026-10-25 | Pending | #5 |
+| T-105 | Phase 2 | Logic Flow & Flowcharting | Diego Balderaz | 2026-10-25 | Completed | #5 |
 
 ---
 
