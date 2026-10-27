@@ -15,6 +15,7 @@
 | T-103 | Phase 2 | System Architecture & Component Map | Jesse Wolford | 2026-10-25 | Completed | #3 |
 | T-104 | Phase 2 | Data Structures & OOP Design | Warren Nixon | 2026-10-25 | Completed | #4 |
 | T-105 | Phase 2 | Logic Flow & Flowcharting | Diego Balderaz | 2026-10-25 | Completed | #5 |
+|T-106 | Phase 3 | Implement Welcome & Sign-In Page | Jesse, Warren, Diego | 2026-11-02 | In Progress | #6 |
 
 ---
 
@@ -23,6 +24,7 @@
 ### Jesse Wolford
 - Phase 1: Configured repository, gitignore, and initial README template.
 - Phase 2: Authored functional requirements and established project task log.
+- Phase 3: Created individual feature/ branch.
 
 ### Warren Nixon
 - Phase 1: Account setup and invitation acceptance.
