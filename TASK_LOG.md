@@ -16,6 +16,7 @@
 | T-104 | Phase 2 | Data Structures & OOP Design | Warren Nixon | 2026-10-25 | Completed | #4 |
 | T-105 | Phase 2 | Logic Flow & Flowcharting | Diego Balderaz | 2026-10-25 | Completed | #5 |
 |T-106 | Phase 3 | Implement Welcome & Sign-In Page | Jesse, Warren, Diego | 2026-11-02 | In Progress | #6 |
+| T-107 | Phase 3 | Implement Core Billing & Expense Lists (`Billing_List.py`) | Warren Nixon | 2026-11-02 | In Progress | #7 |
 
 ---
 
@@ -29,6 +30,7 @@
 ### Warren Nixon
 - Phase 1: Account setup and invitation acceptance.
 - Phase 2: Designed system architecture diagram and module layout.
+- Phase 3: Implemented core billing and expense list functionality.
 
 ### Diego Balderaz
 - Phase 1: Account setup and board configuration.
