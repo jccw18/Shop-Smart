@@ -1,3 +1,11 @@
+'''
+Authors     : Jesse & Diego & Warren Nixon
+Date        : Oct. 31, 2026
+Course      : CSCI-1220-A01-Python: Problem Solving
+Module      : Billing List.py
+Description : Allows the user to create and modify the list to their need
+'''
+
 items = [] # Stores all the items the user wants
 
 # This class lets the user see and change the list as needed
