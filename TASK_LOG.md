@@ -15,8 +15,8 @@
 | T-103 | Phase 2 | System Architecture & Component Map | Jesse Wolford | 2026-10-25 | Completed | #3 |
 | T-104 | Phase 2 | Data Structures & OOP Design | Warren Nixon | 2026-10-25 | Completed | #4 |
 | T-105 | Phase 2 | Logic Flow & Flowcharting | Diego Balderaz | 2026-10-25 | Completed | #5 |
-|T-106 | Phase 3 | Implement Welcome & Sign-In Page | Jesse, Warren, Diego | 2026-11-02 | In Progress | #6 |
-| T-107 | Phase 3 | Implement Core Billing & Expense Lists (`Billing_List.py`) | Warren Nixon | 2026-11-02 | In Progress | #7 |
+|T-106 | Phase 3 | Implement Welcome & Sign-In Page | Jesse, Warren, Diego | 2026-11-02 | Completed | #6 |
+| T-107 | Phase 3 | Implement Core Billing & Expense Lists (`Billing_List.py`) | Warren Nixon | 2026-11-02 | Completed | #7 |
 
 ---
 
@@ -26,6 +26,7 @@
 - Phase 1: Configured repository, gitignore, and initial README template.
 - Phase 2: Authored functional requirements and established project task log.
 - Phase 3: Created individual feature/ branch.
+- Phase 3: Implemented Welcome and Sign-In page functionality.
 
 ### Warren Nixon
 - Phase 1: Account setup and invitation acceptance.
@@ -35,3 +36,4 @@
 ### Diego Balderaz
 - Phase 1: Account setup and board configuration.
 - Phase 2: Created UI wireframes and user stories.
+- Phase 3: Checked UI wireframe Jesse created and gave proper feedback.
