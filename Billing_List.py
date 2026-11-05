@@ -1,7 +1,7 @@
 '''
     Authors     : Jesse & Diego & Warren Nixon
     Date        : Oct. 31, 2026
-    Course      : CSCI-1220-A01-Python: Problem Solving
+    Course      : CSCI-1220-A01-Python: Python
     Module      : Billing List.py
     Description : Allows the user to create and modify the list to their need
 '''
@@ -16,6 +16,10 @@ def list_info():
     print("3. View list")
     print("4. Quit")
 
+def show_items():
+    for i, (name, price) in enumerate(items, start=1):
+        print(f"{i}. {name}: ${price:.2f}")
+
 while True: # Runs until the user is done editing the list
     list_info() # Shows the user the info about the list
     choose = input("Choose an option (1-4): ") # The user chooses what they want to do to the list based on the options (in the class, list_info) they were given
@@ -29,8 +33,14 @@ while True: # Runs until the user is done editing the list
                 item = input("Enter an item to add: ").strip()
 
                 if item:
-                   items.append(item)
-                   print(f"Added {item}.")
+                    item_price = input(f"Enter the price of {item}: $").strip().replace("$", "")
+                    
+                    if item_price.replace(".", "", 1).isdigit():
+                        price = float(item_price)
+                        items.append((item,price))
+                        print(f"Added {item}: ${price:.2f}.")
+                    else:
+                        print("Please enter a number that it costs")
                 else:
                     print("You didn't Enter anything") # If they just hit enter with nothing it it says You didn't Enter anything
 
@@ -38,8 +48,8 @@ while True: # Runs until the user is done editing the list
                 if not items: # this part runs if there is nothing in the list
                     print("There is nothing to remove.")
                 else: # This shows everything in the list and lets the user choose what number they want to remove
-                    for i, item in enumerate(items, start=1):
-                        print(f"{i}. {item}")
+                    show_items()
+
                     num = input("Enter the number from the list to remove: ") # Let's the user choose what to remove (based on the number)
 
                     if not num.isdigit(): # If they put sothing that isn't a number
@@ -48,8 +58,8 @@ while True: # Runs until the user is done editing the list
                         num = int(num) # This is for it not being a string so it runs fine
                         if 1 <= num <= len(items): # This removes the item for the list (The 1 is because the list they see starts at 1 not zero)
                             
-                            removed = items.pop(num - 1)
-                            print(f"Removed {removed} from the list")
+                            removed_name, removed_price = items.pop(num - 1)
+                            print(f"Removed {removed_name} {removed_price:.2f} from the list")
 
                         else: # If the user enters any number that is not listed to them
                             print("Invalid number (Number was not on list).")
@@ -58,8 +68,10 @@ while True: # Runs until the user is done editing the list
                 if items: # This shows everything in the listed numbered from what they entered first
                     print("\nYour list:")
 
-                    for i, item in enumerate(items, start=1):
-                        print(f"{i}. {item}")
+                    show_items()
+
+                    total = sum(price for name, price in items)
+                    print(f"Total: ${total:.2f}")
 
                 else: # Only runs if they have nothing in the list
                     print("List is empty")
