@@ -18,44 +18,55 @@ def list_info():
 
 while True: # Runs until the user is done editing the list
     list_info() # Shows the user the info about the list
-    choose = int(input("Choose an option (1-4): ")) # The user chooses what they want to do to the list based on the options (in the class, list_info) they were given (Only problem is that if they put a string it runs into a error)
+    choose = input("Choose an option (1-4): ") # The user chooses what they want to do to the list based on the options (in the class, list_info) they were given
 
-    match choose:
-        case 1: # Adds the item they want and makes what they type in all lowercase
-            item = input("Enter an item to add: ").strip()
+    if not choose.isdigit(): # If it is not a number it will run this instead of a error
+        print("Please choose 1, 2, 3, or 4")
+    else: # If they choose a valid number
+        choose = int(choose) # This is not really needed it is just to make the match case look better (if you do change it put "" for the match case)
+        match choose:
+            case 1: # Adds the item they want and makes what they type without any white space
+                item = input("Enter an item to add: ").strip()
 
-            if item:
-               items.append(item)
-               print(f"Added {item}.")
-            else:
-                print("You didn't Enter anything") # If they just hit enter with nothing it it says You didn't Enter anything
+                if item:
+                   items.append(item)
+                   print(f"Added {item}.")
+                else:
+                    print("You didn't Enter anything") # If they just hit enter with nothing it it says You didn't Enter anything
 
-        case 2: # The user removes what they want to remove in the list (Also runs into a error if a string is entered)
-            if not items: # this part runs if there is nothing in the list
-                print("There is nothing to remove.")
-            else: # This shows everything in the list and lets the user choose what number they want to remove
-                for i, item in enumerate(items, start=1):
-                    print(f"{i}. {item}")
-                num = int(input("Enter the number from the list to remove: ")) # This is the part that can give an error
+            case 2: # The user removes what they want to remove in the list
+                if not items: # this part runs if there is nothing in the list
+                    print("There is nothing to remove.")
+                else: # This shows everything in the list and lets the user choose what number they want to remove
+                    for i, item in enumerate(items, start=1):
+                        print(f"{i}. {item}")
+                    num = input("Enter the number from the list to remove: ") # Let's the user choose what to remove (based on the number)
 
-                if 1 <= num <= len(items): # This removes the item for the list (The 1 is because the list they see starts at 1 not zero)
-                    removed = items.pop(num - 1)
-                    print(f"Removed {removed} from the list")
-                else: # If the user enters any number that is not listed to them
-                    print("Invalid number.")
+                    if not num.isdigit(): # If they put sothing that isn't a number
+                        print("Please enter a number")
+                    else: 
+                        num = int(num) # This is for it not being a string so it runs fine
+                        if 1 <= num <= len(items): # This removes the item for the list (The 1 is because the list they see starts at 1 not zero)
+                            
+                            removed = items.pop(num - 1)
+                            print(f"Removed {removed} from the list")
 
-        case 3: # This shows the user everything in the list
-            if items: # This shows everything in the listed numbered from what they entered first
-                print("\nYour list:")
+                        else: # If the user enters any number that is not listed to them
+                            print("Invalid number (Number was not on list).")
 
-                for i, item in enumerate(items, start=1):
-                    print(f"{i}. {item}")
+            case 3: # This shows the user everything in the list
+                if items: # This shows everything in the listed numbered from what they entered first
+                    print("\nYour list:")
+
+                    for i, item in enumerate(items, start=1):
+                        print(f"{i}. {item}")
+
                 else: # Only runs if they have nothing in the list
                     print("List is empty")
     
-        case 4: # This lets the user exit the list
-            print("You ended the list")
-            break
+            case 4: # This lets the user exit the list
+                print("You ended the list")
+                break
 
-        case _: # This is if they eneter anything that is not offered
-            print("Please choose 1, 2, 3, or 4")
+            case _: # This is if they eneter anything that is not offered (just incase something fails)
+                print("Please choose 1, 2, 3, or 4")
