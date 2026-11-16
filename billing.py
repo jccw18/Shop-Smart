@@ -75,6 +75,15 @@ def option_clicked(event=None):
 
                         price = float(item_price) # let's the price be a mixed number with the filters applied to what the user typed
                         items.append((item,price)) # Adds the item with the price
+                        element = document.getElementById("bank-balance")
+                        raw_text = element.value.strip().replace("$", "").replace(",", "")
+
+                        try:
+                            numeric_value = float(raw_text)
+                            updated_value = numeric_value - price  # Or + when refunding
+                            element.value = f"{updated_value:.2f}"
+                        except ValueError:
+                            pass
                         print(f"Added {item}: ${price:,.2f}")
                         clear_boxes()
 
@@ -106,6 +115,15 @@ def option_clicked(event=None):
                         if 1 <= num <= len(items): # This removes the item for the list (The 1 is because the list they see starts at 1 not zero)
 
                             removed_name, removed_price = items.pop(num - 1)
+                            element = document.getElementById("bank-balance")
+                            raw_text = element.value.strip().replace("$", "").replace(",", "")
+
+                            try:
+                                numeric_value = float(raw_text)
+                                updated_value = numeric_value + removed_price  # Or + when refunding
+                                element.value = f"{updated_value:.2f}"
+                            except ValueError:
+                                pass 
                             print(f"Removed {removed_name} {removed_price:,.2f} from the list")
                             clear_boxes()
 
