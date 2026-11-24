@@ -138,7 +138,6 @@
   overflow: hidden; /* Ensures image corners matches the card border radius */
 }
 
-/* Bills List python page (PyScript) */
 .card-body {
   padding: 20px;
   display: flex;
@@ -164,9 +163,9 @@
 .console {
   margin: 0;
   text-align: left;
-  white-space: pre-wrap; /* keeps the new lines from print() */
+  white-space: pre-wrap;
   max-height: 300px;
   overflow-y: auto;
-  font-family: Consolas, monospace;
   font-size: 0.9rem;
 }
+
