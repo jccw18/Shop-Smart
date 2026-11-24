@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bills List</title>
+    <link rel="stylesheet" href="button.css" />
+    <link
+      rel="stylesheet"
+      href="https://pyscript.net/releases/2024.11.1/core.css"
+    />
+    <script
+      type="module"
+      src="https://pyscript.net/releases/2024.11.1/core.js"
+    ></script>
+  </head>
+
+  <body data-list="bills">
+    <header></header>
+
+    <main class="main">
+      <div class="container">
+        <h3>Bills</h3>
+        <p>Organize and track your bills</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-body">
+              <h3>Add a bill</h3>
+              <input type="text" id="item-name" placeholder="Bill name" />
+              <input type="text" id="item-price" placeholder="Price" />
+              <button py-click="option_clicked" data-choice="1">Add</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3>Remove a bill</h3>
+              <input
+                type="text"
+                id="remove-num"
+                placeholder="Number from the list"
+              />
+              <button py-click="option_clicked" data-choice="2">Remove</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3>Your list</h3>
+              <pre id="output" class="console"></pre>
+
+              <button py-click="option_clicked" data-choice="3">
+                View list
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3>Bank Balance</h3>
+              <input
+                type="text"
+                id="bank-balance"
+                placeholder="Enter current bank amount"
+              />
+              <button py-click="set_balance">Set Balance</button>
+              <p id="balance-left"></p>
+            </div>
+          </div>
+        </div>
+
+        <ul class="buttons">
+          <li><a href="Button.html">Back to Dashboard</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <script type="py" src="budget.py"></script>
+  </body>
+</html>
